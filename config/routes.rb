@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :recomendations
+
   resources :current_vitals
 
   resources :vitals

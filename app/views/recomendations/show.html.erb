@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @recomendation.doctor_id %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @recomendation.comment %>
+</p>
+
+<%= link_to 'Edit', edit_recomendation_path(@recomendation) %> |
+<%= link_to 'Back', recomendations_path %>

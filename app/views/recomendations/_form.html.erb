@@ -1,0 +1,25 @@
+<%= form_for(@recomendation) do |f| %>
+  <% if @recomendation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recomendation.errors.count, "error") %> prohibited this recomendation from being saved:</h2>
+
+      <ul>
+      <% @recomendation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :doctor_id %><br>
+    <%= f.number_field :doctor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

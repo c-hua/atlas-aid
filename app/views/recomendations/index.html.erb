@@ -1,0 +1,27 @@
+<h1>Listing recomendations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Doctor</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recomendations.each do |recomendation| %>
+      <tr>
+        <td><%= recomendation.doctor_id %></td>
+        <td><%= recomendation.comment %></td>
+        <td><%= link_to 'Show', recomendation %></td>
+        <td><%= link_to 'Edit', edit_recomendation_path(recomendation) %></td>
+        <td><%= link_to 'Destroy', recomendation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Recomendation', new_recomendation_path %>
