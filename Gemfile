@@ -4,6 +4,20 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 gem 'devise'
+gem 'paperclip'
+
+gem 'twitter-bootstrap-rails'
+gem 'gravatar_image_tag'
+gem 'js-routes'
+gem 'simple_form'
+
+gem 'will_paginate'
+gem 'acts_as_commentable', '3.0.1'
+gem 'acts_as_commentable_with_threading'
+gem 'pg'
+
+gem 'jquery-rails'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
