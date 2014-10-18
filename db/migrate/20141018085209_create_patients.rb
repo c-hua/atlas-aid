@@ -4,7 +4,7 @@ class CreatePatients < ActiveRecord::Migration
       t.string :labs
       t.string :pathology
       t.string :notes
-      t.integer :id
+
 
       t.timestamps
     end
