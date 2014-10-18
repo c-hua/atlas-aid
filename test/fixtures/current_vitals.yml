@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current_interventions: MyString
+  status: MyString
+  dosage_dates: 2014-10-18 01:56:48
+  surgeries: MyString
+  eligibility_clinical: false
+
+two:
+  current_interventions: MyString
+  status: MyString
+  dosage_dates: 2014-10-18 01:56:48
+  surgeries: MyString
+  eligibility_clinical: false

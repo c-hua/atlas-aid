@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Current interventions:</strong>
+  <%= @current_vital.current_interventions %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @current_vital.status %>
+</p>
+
+<p>
+  <strong>Dosage dates:</strong>
+  <%= @current_vital.dosage_dates %>
+</p>
+
+<p>
+  <strong>Surgeries:</strong>
+  <%= @current_vital.surgeries %>
+</p>
+
+<p>
+  <strong>Eligibility clinical:</strong>
+  <%= @current_vital.eligibility_clinical %>
+</p>
+
+<%= link_to 'Edit', edit_current_vital_path(@current_vital) %> |
+<%= link_to 'Back', current_vitals_path %>

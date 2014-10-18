@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :current_vitals
+
   resources :vitals
 
   resources :patients

@@ -1,0 +1,37 @@
+<%= form_for(@current_vital) do |f| %>
+  <% if @current_vital.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@current_vital.errors.count, "error") %> prohibited this current_vital from being saved:</h2>
+
+      <ul>
+      <% @current_vital.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :current_interventions %><br>
+    <%= f.text_field :current_interventions %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :dosage_dates %><br>
+    <%= f.datetime_select :dosage_dates %>
+  </div>
+  <div class="field">
+    <%= f.label :surgeries %><br>
+    <%= f.text_field :surgeries %>
+  </div>
+  <div class="field">
+    <%= f.label :eligibility_clinical %><br>
+    <%= f.check_box :eligibility_clinical %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
