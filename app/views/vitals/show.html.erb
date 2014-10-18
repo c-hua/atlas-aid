@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Heart rate:</strong>
+  <%= @vital.heart_rate %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @vital.date %>
+</p>
+
+<p>
+  <strong>Blood pressure:</strong>
+  <%= @vital.blood_pressure %>
+</p>
+
+<p>
+  <strong>Respiratory rate:</strong>
+  <%= @vital.respiratory_rate %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @vital.temperature %>
+</p>
+
+<p>
+  <strong>Red blood cell:</strong>
+  <%= @vital.red_blood_cell %>
+</p>
+
+<p>
+  <strong>White blood cell:</strong>
+  <%= @vital.white_blood_cell %>
+</p>
+
+<p>
+  <strong>Chemo date:</strong>
+  <%= @vital.chemo_date %>
+</p>
+
+<p>
+  <strong>Chemo type:</strong>
+  <%= @vital.chemo_type %>
+</p>
+
+<%= link_to 'Edit', edit_vital_path(@vital) %> |
+<%= link_to 'Back', vitals_path %>

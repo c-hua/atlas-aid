@@ -1,0 +1,53 @@
+<%= form_for(@vital) do |f| %>
+  <% if @vital.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vital.errors.count, "error") %> prohibited this vital from being saved:</h2>
+
+      <ul>
+      <% @vital.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :heart_rate %><br>
+    <%= f.number_field :heart_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :blood_pressure %><br>
+    <%= f.number_field :blood_pressure %>
+  </div>
+  <div class="field">
+    <%= f.label :respiratory_rate %><br>
+    <%= f.number_field :respiratory_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :temperature %><br>
+    <%= f.number_field :temperature %>
+  </div>
+  <div class="field">
+    <%= f.label :red_blood_cell %><br>
+    <%= f.number_field :red_blood_cell %>
+  </div>
+  <div class="field">
+    <%= f.label :white_blood_cell %><br>
+    <%= f.number_field :white_blood_cell %>
+  </div>
+  <div class="field">
+    <%= f.label :chemo_date %><br>
+    <%= f.number_field :chemo_date %>
+  </div>
+  <div class="field">
+    <%= f.label :chemo_type %><br>
+    <%= f.text_field :chemo_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

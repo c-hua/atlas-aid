@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  heart_rate: 1
+  date: 2014-10-18 01:55:14
+  blood_pressure: 1
+  respiratory_rate: 1
+  temperature: 1
+  red_blood_cell: 1
+  white_blood_cell: 1
+  chemo_date: 1
+  chemo_type: MyString
+
+two:
+  heart_rate: 1
+  date: 2014-10-18 01:55:14
+  blood_pressure: 1
+  respiratory_rate: 1
+  temperature: 1
+  red_blood_cell: 1
+  white_blood_cell: 1
+  chemo_date: 1
+  chemo_type: MyString
