@@ -11,6 +11,7 @@ gem 'twitter-bootstrap-rails'
 gem 'gravatar_image_tag'
 gem 'js-routes'
 gem 'simple_form'
+gem 'twilio'
 
 gem 'will_paginate'
 gem 'acts_as_commentable', '3.0.1'
@@ -23,7 +24,7 @@ gem 'font-awesome-rails'
 
 gem 'jquery-rails'
 gem 'angularjs-rails'
-gem 'angular-ui-boostrap-rails'
+gem 'angular-ui-bootstrap-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
